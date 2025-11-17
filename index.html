@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Universitas di Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Daftar Universitas di Indonesia</h1>
+    <p align="right"><button class="logout-btn-custom" onclick="logout()">Logout</button></p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari nama universitas..." />
+      </div>
+
+      <div class="university-list" id="universityList">
+
+        <!-- EXISTING UNIVERSITIES -->
+        <div class="card">
+          <a href="1_ui.html"><img src="PROJECT WEBSITE/UI1.jpg" alt="Universitas Indonesia"></a>
+          <h2>Universitas Indonesia (UI)</h2>
+          <p>Depok, Jawa Barat</p>
+        </div>
+        <div class="card">
+          <a href="2_ugm.html"><img src="PROJECT WEBSITE/UGM11.jpg" alt="UGM"></a>
+          <h2>Universitas Gadjah Mada (UGM)</h2>
+          <p>Sleman, Yogyakarta</p>
+        </div>
+        <div class="card">
+          <a href="3_itb.html"><img src="PROJECT WEBSITE/ITB1.jpg" alt="ITB"></a>
+          <h2>Institut Teknologi Bandung (ITB)</h2>
+          <p>Bandung, Jawa Barat</p>
+        </div>
+        <div class="card">
+          <a href="4_unair.html"><img src="PROJECT WEBSITE/UNAIR1.webp" alt="UNAIR"></a>
+          <h2>Universitas Airlangga (UNAIR)</h2>
+          <p>Surabaya, Jawa Timur</p>
+        </div>
+        <div class="card">
+          <a href="5_unpad.html"><img src="PROJECT WEBSITE/UNPAD1.jpg" alt="UNPAD"></a>
+          <h2>Universitas Padjadjaran (UNPAD)</h2>
+          <p>Jatinangor, Sumedang, Jawa Barat</p>
+        </div>
+        <div class="card">
+          <a href="6_ipb.html"><img src="PROJECT WEBSITE/IPB1.avif" alt="IPB"></a>
+          <h2>Institut Pertanian Bogor (IPB)</h2>
+          <p>Bogor, Jawa Barat</p>
+        </div>
+        <div class="card">
+          <a href="7_uny.html"><img src="PROJECT WEBSITE/UNY1.jpg" alt="UNY"></a>
+          <h2>Universitas Negeri Yogyakarta (UNY)</h2>
+          <p>Sleman, Yogyakarta</p>
+        </div>
+        <div class="card">
+          <a href="8_ub.html"><img src="PROJECT WEBSITE/UB1.jpeg" alt="UB"></a>
+          <h2>Universitas Brawijaya (UB)</h2>
+          <p>Malang, Jawa Timur</p>
+        </div>
+        <div class="card">
+          <a href="9_its.html"><img src="PROJECT WEBSITE/ITS1.jpeg" alt="ITS"></a>
+          <h2>Institut Teknologi Sepuluh Nopember (ITS)</h2>
+          <p>Surabaya, Jawa Timur</p>
+        </div>
+        <div class="card">
+          <a href="10_upi.html"><img src="PROJECT WEBSITE/UPI1.jpg" alt="UPI"></a>
+          <h2>Universitas Pendidikan Indonesia (UPI)</h2>
+          <p>Bandung, Jawa Barat</p>
+        </div>
+        <div class="card">
+          <a href="11_undip.html"><img src="PROJECT WEBSITE/UNDIP.jpg" alt="UNDIP"></a>
+          <h2>Universitas Diponegoro (UNDIP)</h2>
+          <p>Semarang, Jawa Tengah</p>
+        </div>
+        <div class="card">
+          <a href="12_uns.html"><img src="PROJECT WEBSITE/UNS1.jpeg" alt="UNS"></a>
+          <h2>Universitas Sebelas Maret (UNS)</h2>
+          <p>Surakarta, Jawa Tengah</p>
+        </div>
+        <div class="card">
+          <a href="13_unhas.html"><img src="PROJECT WEBSITE/gunhas" alt="UNHAS"></a>
+          <h2>Universitas Hasanuddin (UNHAS)</h2>
+          <p>Makassar, Sulawesi Selatan</p>
+        </div>
+
+        <div class="card">
+          <a href="14_telkom.html"><img src="PROJECT WEBSITE/telkom.jpg" alt="Telkom University"></a>
+          <h2>Telkom University</h2>
+          <p>Bandung, Jawa Barat</p>
+        </div>
+
+        <div class="card">
+          <a href="15_unp.html"><img src="PROJECT WEBSITE/unp.jpg" alt="UNP"></a>
+          <h2>Universitas Negeri Padang (UNP)</h2>
+          <p>Padang, Sumatera Barat</p>
+        </div>
+
+        <div class="card">
+          <a href="16_andalas.html"><img src="PROJECT WEBSITE/andalas.jpg" alt="UNAND"></a>
+          <h2>Universitas Andalas (UNAND)</h2>
+          <p>Limau Manis, Padang, Sumatera Barat</p>
+        </div>
+
+        <div class="card">
+          <a href="17_unsoed.html"><img src="PROJECT WEBSITE/unsoed.jpg" alt="UNSOED"></a>
+          <h2>Universitas Jenderal Soedirman (UNSOED)</h2>
+          <p>Purwokerto, Jawa Tengah</p>
+        </div>
+
+        <div class="card">
+          <a href="18_unud.html"><img src="PROJECT WEBSITE/rektoratudayana.jpg" alt="UNUD"></a>
+          <h2>Universitas Udayana (UNUD)</h2>
+          <p>Badung & Denpasar, Bali</p>
+        </div>
+
+        <div class="card">
+          <a href="19_unib.html"><img src="PROJECT WEBSITE/unbeng.jpg" alt="UNIB"></a>
+          <h2>Universitas Bengkulu (UNIB)</h2>
+          <p>Bengkulu, Bengkulu</p>
+        </div>
+
+        <div class="card">
+          <a href="20_ungorontalo.html"><img src="PROJECT WEBSITE/ung.jpg" alt="UNG"></a>
+          <h2>Universitas Negeri Gorontalo (UNG)</h2>
+          <p>Kota Gorontalo, Gorontalo</p>
+        </div>
+
+      </div>
+
+      <div class="back-btn-container">
+        <button class="back-btn" onclick="window.location.href='home.html'">
+          ⬅️ Kembali ke Halaman Awal
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 By Alvi Munawaroh</p>
+  </footer>
+
+  <!-- Popup Logout -->
+  <div class="logout-popup" id="logoutPopup">
+    <div class="logout-box">
+      <h3>Konfirmasi Logout</h3>
+      <p>Apakah kamu yakin ingin keluar dari halaman ini?</p>
+      <div class="logout-actions">
+        <button id="cancelLogout" class="btn-cancel">Batal</button>
+        <button id="confirmLogout" class="btn-logout">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fungsi Logout modern
+    const logoutPopup = document.getElementById('logoutPopup');
+    const cancelLogout = document.getElementById('cancelLogout');
+    const confirmLogout = document.getElementById('confirmLogout');
+
+    function logout() {
+      logoutPopup.style.display = 'flex';
+    }
+
+    cancelLogout.addEventListener('click', () => {
+      logoutPopup.style.display = 'none';
+    });
+
+    confirmLogout.addEventListener('click', () => {
+      alert("Anda telah logout.");
+      window.location.href = "login.html";
+    });
+
+    // Fitur Pencarian
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('keyup', () => {
+      const keyword = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        card.style.display = title.includes(keyword) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

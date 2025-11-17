@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Modern Glass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <div class="login-box">
+      <h2>Selamat Datang 👋</h2>
+      <p class="subtitle">Masuk untuk melanjutkan ke akunmu</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <span class="icon">👤</span>
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+
+        <div class="input-group">
+          <span class="icon">🔒</span>
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+
+        <button type="submit">Masuk</button>
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+:root {
+  --bg-color: #eef2f3;
+  --box-bg: rgba(255, 255, 255, 0.2);
+  --text-color: #222;
+  --accent: #003972;
+  --input-bg: rgba(255, 255, 255, 0.5);
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+  --bg-color: #1a1a1a;
+  --box-bg: rgba(255, 255, 255, 0.08);
+  --text-color: #f5f5f5;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.4s ease;
+}
+
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background: var(--box-bg);
+  backdrop-filter: blur(15px);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px var(--shadow);
+  width: 360px;
+  text-align: center;
+  color: var(--text-color);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: var(--input-bg);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+.input-group:hover {
+  transform: scale(1.02);
+}
+
+.icon {
+  width: 24px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  margin-top: 10px;
+  color: #ffbbbb;
+  font-size: 14px;
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-size: 13px;
+}
+.footer-text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+const form = document.getElementById("loginForm");
+const errorMessage = document.getElementById("errorMessage");
+
+// Validasi login sederhana
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  if (username === "Alvi" && password === "imut") {
+    errorMessage.style.color = "#b6ffb6";
+    errorMessage.textContent = "✅ Login berhasil! Mengalihkan...";
+    setTimeout(() =>{
+      window.location.href = "home.html";
+    }, 1200);
+  } else {
+    errorMessage.style.color = "#ffbbbb";
+    errorMessage.textContent = "❌ Username atau password salah!";
+  }
+});
+
+</script>
