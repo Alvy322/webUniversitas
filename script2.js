@@ -1,6 +1,4 @@
-// =========================
-// ANIMASI SCROLL SECTION
-// =========================
+// 
 const uiSections = document.querySelectorAll(".ui-main section");
 function showUISections(){
   const trigger = window.innerHeight * 0.85;
@@ -12,10 +10,6 @@ function showUISections(){
 window.addEventListener("scroll", showUISections);
 showUISections();
 
-
-// =========================
-// SMOOTH SCROLL TOMBOL HEADER
-// =========================
 const uiBtn = document.querySelector('.ui-header .ui-btn');
 if (uiBtn) {
   uiBtn.addEventListener('click', function(e) {
@@ -26,6 +20,8 @@ if (uiBtn) {
 }
 
 
+
+//slide galeri
 let currentSlide = 0;
 
 const slides = document.querySelectorAll(".slide-img");

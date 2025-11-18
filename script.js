@@ -5,11 +5,11 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   const password = document.getElementById('password').value.trim();
   const message = document.getElementById('message');
 
-  // Contoh validasi dasar
+//login
   if (username === 'alvi' && password === '112233') {
     message.style.color = 'green';
     message.textContent = 'Login berhasil!';
-    // Redirect simulasi
+
     setTimeout(() => {
       alert('Selamat datang, alvi!');
     }, 1000);
@@ -22,5 +22,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   }
 });
 
-// newui
 

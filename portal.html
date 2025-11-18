@@ -251,20 +251,17 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Portal Universitas di Indonesia</h1>
     <button class="logout-btn-custom" onclick="logout()">Logout</button>
   </header>
 
-  <!-- MAIN -->
   <main>
     <section class="intro-section">
       <h2>Selamat Datang di Portal Universitas di Indonesia</h2>
       <p>Temukan berbagai universitas terbaik di Indonesia.
         Jelajahi informasi kampus, program studi, dan fasilitas untuk menemukan kampus impianmu!</p>
 
-      <!-- === GALERI FOTO BARU === -->
       <div class="gallery-container">
         <div class="gallery-scroll">
           <img src="PROJECT WEBSITE/UI1.jpg" class="gallery-item" onclick="openModal(0)">
@@ -301,7 +298,7 @@
     <p>&copy; 2025 By Alvi Munawaroh</p>
   </footer>
 
-  <!-- === MODAL ZOOM FOTO === -->
+  <!-- zoom foto -->
   <div id="galleryModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
@@ -341,7 +338,7 @@
       window.location.href = "login.html";
     });
 
-    /* ---------------- GALERI MODAL ---------------- */
+    /* ---------------- GALERI ---------------- */
     const galleryImages = [
       "PROJECT WEBSITE/UI1.jpg",
       "PROJECT WEBSITE/UGM11.jpg",

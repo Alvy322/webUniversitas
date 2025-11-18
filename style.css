@@ -1,11 +1,9 @@
-/* ================= RESET DASAR ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================= GAYA UMUM ================= */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
@@ -13,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
 header {
   width: 100%;
   background-color: #003972;
@@ -32,29 +29,26 @@ header h1 {
   margin-bottom: 8px;
 }
 
-/* ================= MAIN ================= */
 main {
   padding: 30px 20px;
 }
 
-/* ================= LIST UNIVERSITAS ================= */
 .university-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  justify-content: center;  /* agar hasil pencarian 1 tetap di tengah */
-  max-width: 1200px;        /* batasi lebar grid agar tidak melebar */
+  justify-content: center; 
+  max-width: 1200px;       
   margin: 0 auto;
 }
 
-/* ================= CARD UNIVERSITAS ================= */
 .card {
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  max-width: 500px;  /* BATASI ukuran maksimal kartu */
+  max-width: 500px; 
   margin: 0 auto;
 }
 
@@ -65,7 +59,7 @@ main {
 .card img {
   width: 100%;
   height: 220px;
-  object-fit: cover; /* supaya proporsi gambar tetap bagus */
+  object-fit: cover;
   border-radius: 0;
   background-color: #f0f0f0;
 }
@@ -85,7 +79,6 @@ main {
   font-size: 0.95rem;
 }
 
-/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 20px;
@@ -93,7 +86,7 @@ footer {
   color: white;
 }
 
-/* ================= BUTTON LOGOUT ================= */
+/* button logout */
 .page-header {
   width: 100%;
   background-color: #2c3e50;
@@ -128,7 +121,7 @@ footer {
   background-color: #c0392b;
 }
 
-/* ================= POPUP LOGOUT ================= */
+/* popup logout */
 .logout-popup {
   position: fixed;
   top: 0;
@@ -197,7 +190,6 @@ footer {
   background-color: #c0392b;
 }
 
-/* ================= ANIMASI ================= */
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -208,7 +200,7 @@ footer {
   to {transform: scale(1);}
 }
 
-/* ================= TOMBOL KEMBALI ================= */
+/* tombol back */
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -241,7 +233,7 @@ footer {
   margin-top: 40px;
 }
 
-/* ================= HALAMAN AWAL ================= */
+
 .intro-section {
   text-align: center;
   margin-top: 100px;
@@ -300,7 +292,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* ================= BAGIAN SEARCH ================= */
+/* fitur search */
 .search-section {
   display: block;
   animation: fadeIn 0.5s ease;
@@ -327,7 +319,6 @@ footer {
   box-shadow: 0 0 6px rgba(0, 85, 187, 0.4);
 }
 
-/* ================= ANIMASI TAMBAHAN ================= */
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(10px);}
   to {opacity: 1; transform: translateY(0);}
