@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>20 Universitas Terbaik di Indonesia</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      background: transparent;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      width: 100%;
+    }
+
+    /* Card besar logo — diperbesar agar 20 logo muat */
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+      justify-items: center;
+      align-items: center;
+      width: 700px;
+      height: auto;
+      transition: all 0.3s ease;
+    }
+
+    .logo-item {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fafafa;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .logo-item:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .logo-item img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+
+    .text-section {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .text-section h1 {
+      font-size: 32px;
+      color: #003972;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .text-section p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .explore-btn {
+      display: inline-block;
+      background-color: #003972;
+      color: white;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .explore-btn:hover {
+      background-color: #0054b0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 57, 114, 0.3);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .text-section {
+        text-align: center;
+      }
+      .card {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card" id="logoGrid"></div>
+
+    <div class="text-section">
+      <h1>20 Universitas Terbaik di Indonesia</h1>
+      <p>Temukan kampus unggulan dari Indonesia untuk masa depan terbaikmu!</p>
+      <a href="login.html" class="explore-btn">Masuk dan Jelajahi</a>
+    </div>
+  </div>
+
+  <script>
+    const universities = [
+      "PROJECT WEBSITE/logoUI.png",
+      "PROJECT WEBSITE/logoUGM.jpeg",
+      "PROJECT WEBSITE/logoITB.png",
+      "PROJECT WEBSITE/logoUNAIR.png",
+      "PROJECT WEBSITE/logoUNPAD.png",
+      "PROJECT WEBSITE/logoIPB.png",
+      "PROJECT WEBSITE/logoUNY.svg",
+      "PROJECT WEBSITE/logoUB.jpeg",
+      "PROJECT WEBSITE/logoITS.png",
+      "PROJECT WEBSITE/logoUPI.png",
+      "PROJECT WEBSITE/logoUNDIP.png",
+      "PROJECT WEBSITE/logoUNS.jpeg",
+      "PROJECT WEBSITE/logoUNHAS.jpg",
+      "PROJECT WEBSITE/logoTELKOM.png",
+      "PROJECT WEBSITE/logoUNP.png",
+      "PROJECT WEBSITE/logoANDALAS.jpg",
+      "PROJECT WEBSITE/logoUnsoed.png",
+      "PROJECT WEBSITE/logoUDAYANA.png",
+      "PROJECT WEBSITE/logoUNIB.png",
+      "PROJECT WEBSITE/logoUNG.jpg"
+    ];
+
+    const grid = document.getElementById("logoGrid");
+
+    universities.forEach(url => {
+      const div = document.createElement("div");
+      div.className = "logo-item";
+      const img = document.createElement("img");
+      img.src = url;
+      img.alt = "Logo Universitas";
+      div.appendChild(img);
+      grid.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>
